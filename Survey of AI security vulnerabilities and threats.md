@@ -1,5 +1,27 @@
 # AI security vulnerabilities and threats	
 
+- [AI security vulnerabilities and threats](#ai-security-vulnerabilities-and-threats)
+  * [1. The first one of Attacks categories](#1-the-first-one-of-attacks-categories)
+    + [1) Espionage](#1--espionage)
+    + [2) Sabotage](#2--sabotage)
+    + [3) Fraud](#3--fraud)
+  * [2.The second one of Attacks categories](#2the-second-one-of-attacks-categories)
+    + [1) Evasion](#1--evasion)
+    + [2) Poisoning：Widespread.](#2--poisoning-widespread)
+    + [3) Trojianing](#3--trojianing)
+    + [4) backdooring](#4--backdooring)
+    + [5) reprogramming (adversarial reprogramming)](#5--reprogramming--adversarial-reprogramming-)
+    + [6) inference attack (Privacy attack)](#6--inference-attack--privacy-attack-)
+  * [3.The third one of Attacks categories](#3the-third-one-of-attacks-categories)
+    + [1) attacks on supervised learning (classification)](#1--attacks-on-supervised-learning--classification-)
+    + [2) attacks on supervised learning (regression)](#2--attacks-on-supervised-learning--regression-)
+    + [3) attacks on semi-supervised learning (generative models)](#3--attacks-on-semi-supervised-learning--generative-models-)
+    + [4) attacks on unsupervised learning (clustering)](#4--attacks-on-unsupervised-learning--clustering-)
+    + [5) attacks on unsupervised learning (dimensionality reduction)](#5--attacks-on-unsupervised-learning--dimensionality-reduction-)
+    + [6) attacks on reinforcement learning](#6--attacks-on-reinforcement-learning)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 Power brings responsibility and AI, like any technology, is not immune to attacks.There are different categories of attacks on ML models depending on the actual goal of an attacker (Espionage, Sabotage, Fraud) and the stages of machine learning pipeline (training and production), or also can be called attacks on algorithm and attacks on a model respectively. They are Evasion, Poisoning, Trojaning, Backdooring, Reprogramming, and Inference attacks. Evasion, poisoning and inference are the most widespread now.
 ## 1. The first one of Attacks categories
