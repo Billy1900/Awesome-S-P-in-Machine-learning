@@ -20,11 +20,14 @@
     + [5) attacks on unsupervised learning (dimensionality reduction)](#5--attacks-on-unsupervised-learning--dimensionality-reduction-)
     + [6) attacks on reinforcement learning](#6--attacks-on-reinforcement-learning)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 Power brings responsibility and AI, like any technology, is not immune to attacks.There are different categories of attacks on ML models depending on the actual goal of an attacker (Espionage, Sabotage, Fraud) and the stages of machine learning pipeline (training and production), or also can be called attacks on algorithm and attacks on a model respectively. They are Evasion, Poisoning, Trojaning, Backdooring, Reprogramming, and Inference attacks. Evasion, poisoning and inference are the most widespread now.
 ## 1. The first one of Attacks categories
+|stage\Goal|Espionage|Sabotage|Fraud|
+|---|---|---|---|
+|Training|Inference by poisoning|Poisoning, Trojian, Backdooring|Poisoning|
+|Production|Inference attack|Advesarial Reprogramming, Evasion(False negative evasion)|Evasion (False positive evasion)|
 ### 1) Espionage
 The objective is to glean insights about the system and utilize the received information for his or her own profit or plot more advanced attacks.
 ### 2) Sabotage
