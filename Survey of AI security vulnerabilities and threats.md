@@ -30,6 +30,7 @@ Though AI brings great power, like any technology, is not immune to attacks.Ther
 |Production|Inference attack|Advesarial Reprogramming, Evasion(False negative evasion)|Evasion (False positive evasion)|
 ### 1.1 Espionage
 **Objective:** The objective is to glean insights about the system and utilize the received information for his or her own profit or plot more advanced attacks.
+
 **real-life incident:** A real-life privacy incident happened when Netflix published their dataset. While the data was anonymized, hackers were able to identify the authors of particular reviews. In the world of systems and proprietary algorithms, one of the goals will be to capitalize on a system’s algorithm, the information about the structure of the system, the neural network, the type of this network, a number of layers, etc.
 ### 1.2 Sabotage
 **Objective:** The objective is to disable functionality of an AI system.
