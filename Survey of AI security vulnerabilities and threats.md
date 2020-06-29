@@ -74,7 +74,7 @@ Most studies currently cover inference attacks at the production stage, but ther
 
 ## 3.The third one of Attacks categories
 This map illustrates high-level categories of ML tasks and methods.
- 
+ ![img](https://github.com/Billy1900/Attacks-on-Machine-Learning/blob/master/classification%20of%20ML.png)
 ### 1) attacks on supervised learning (classification)
 First attacks on classification dated 2004 (Link: https://homes.cs.washington.edu/~pedrod/papers/kdd04.pdf)
 ### 2) attacks on supervised learning (regression)
