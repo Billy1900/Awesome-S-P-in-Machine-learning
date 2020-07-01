@@ -90,14 +90,29 @@ The main goal is not only inject some additional behavior but to do it in such a
 This is the most realistic scenario of a sabotage attack on the AI model. As the name implies, the mechanism is based on remote reprogramming of the neural network algorithms.
 ### 2.6 Inference attack (Privacy attack)
 Most studies currently cover inference attacks at the production stage, but there are still some during training.
-- Model inversion attack: most common
-- Model extraction attack: less common, is to know the exact model or even a model’s hyperparameters
-- Membership inference attack: less frequent, guess if particular data example is in the training dataset
+- Model inversion attack (most common)
+
+  This attack method USES some APIS provided by the machine learning system to obtain some preliminary information of the model, and reverse analyze the model with such preliminary information to obtain some private data inside the model. The difference between this kind of attack and the member inference attack is that the member inference attack is aimed at a single training data, while the model reverse attack tends to obtain a certain degree of statistical information.
+- Model extraction attack (less common)
+
+  Model extraction attack is an attack method in which an attacker can infer the parameters or functions of a machine learning model by circulating data and viewing the corresponding response results, so as to copy a machine learning model with similar or even identical functions.
+- Membership inference attack (less frequent)
+
+  It refers to the given black box access rights of the data record and model to determine whether the record is in the training data set of the model. This Attack is based on the observation that for a machine learning model, there is a significant difference in uncertainty between the training set and the non-training set, so an Attack model can be trained to guess if a sample exists in the training set.
 - Attribute inference: guessing a type of data
 #### Research Work
-- [Membership Inference Attacks Against Machine Learning Models](https://arxiv.org/pdf/1610.05820v2.pdf)
-- [Privacy in Pharmacogenetics: An End-to-End Case Study of Personalized Warfarin Dosing](https://pubmed.ncbi.nlm.nih.gov/27077138/)
-
+- Model Inversion attack
+  - [Model inversion attacks that exploit confidence information and basic countermeasures](https://rist.tech.cornell.edu/papers/mi-ccs.pdf)
+  - [Privacy in Pharmacogenetics: An End-to-End Case Study of Personalized Warfarin Dosing](https://pubmed.ncbi.nlm.nih.gov/27077138/)
+- Model extraction
+  - Stealing Machine Learning Models via Prediction APIs[[paper]](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer) [[code]](https://github.com/ftramer/Steal-ML)
+- Membership inference attack
+  - [Membership Inference Attacks Against Machine Learning Models](https://arxiv.org/pdf/1610.05820v2.pdf)
+  - [Demystifying Membership Inference Attacks in Machine Learning as a Service](https://arxiv.org/pdf/1807.09173.pdf)
+  - [ML-Leaks: Model and Data Independent Membership Inference Attacks and Defenses on Machine Learning Models](https://arxiv.org/abs/1806.01246)
+  - [Machine Learning with Membership Privacy using Adversarial Regularization](https://arxiv.org/abs/1807.05852)
+#### Reference
+- [AI与安全之Attack AI（5）偷人又偷心，破坏机器学习模型机密性的三种手法](https://zhuanlan.zhihu.com/p/145202385)
 
 ## 3.The third one of attacks categories
 This map illustrates high-level categories of ML tasks and methods.
@@ -134,6 +149,6 @@ Dimensionality reduction example is seen from the third space on the left to the
 ### 3.6 Attacks on reinforcement learning
 Comparing to supervised or unsupervised learning, there is no data to feed into our model before it starts. 
 #### Research Work
-[Vulnerability of Deep Reinforcement Learning to Policy Induction Attack](https://arxiv.org/abs/1701.04143): This paper has shown that adding adversarial perturbation to each frame of the game can mislead reinforcement learning policies arbitrarily.
+- [Vulnerability of Deep Reinforcement Learning to Policy Induction Attack](https://arxiv.org/abs/1701.04143): This paper has shown that adding adversarial perturbation to each frame of the game can mislead reinforcement learning policies arbitrarily.
 
 
