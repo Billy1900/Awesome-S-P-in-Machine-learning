@@ -99,7 +99,7 @@ Most studies currently cover inference attacks at the production stage, but ther
 - Membership inference attack (less frequent)
 
   It refers to the given black box access rights of the data record and model to determine whether the record is in the training data set of the model. This Attack is based on the observation that for a machine learning model, there is a significant difference in uncertainty between the training set and the non-training set, so an Attack model can be trained to guess if a sample exists in the training set.
-- Attribute inference: guessing a type of data
+
 #### Research Work
 - Model Inversion attack
   - [Model inversion attacks that exploit confidence information and basic countermeasures](https://rist.tech.cornell.edu/papers/mi-ccs.pdf)
