@@ -120,7 +120,10 @@ Most studies currently cover inference attacks at the production stage, but ther
   
   Yeom et al. also propose an attribute inference attack using the same principle they use for their membership inference attack. The attacker evaluates the model’s empirical loss on the input instance for different values of the sensitive attribute, and reports the value which has the maximum posterior probability of achieving the empirical loss. The authors define the attribute advantage similarly to their definition of membership advantage for membership inference.
 ##### Model extraction
-  - Stealing Machine Learning Models via Prediction APIs[[paper]](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer) [[code]](https://github.com/ftramer/Steal-ML)
+- Adversarial Learning [[paper]](https://ix.cs.uoregon.edu/~lowd/kdd05lowd.pdf)
+- Stealing Machine Learning Models via Prediction APIs[[paper]](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer) [[code]](https://github.com/ftramer/Steal-ML)
+- Stealing Hyperparameters in Machine Learning [[paper]](https://arxiv.org/abs/1802.05351) 
+- Cache telepathy: Leveraging shared resource attacks to learn DNN architectures [[paper]](https://arxiv.org/abs/1808.04761)
 ##### Membership inference attack
 - Membership Inference Attacks Against Machine Learning Models[[paper]](https://arxiv.org/pdf/1610.05820v2.pdf) [[Notes]](https://zhuanlan.zhihu.com/p/70982640) [[code]](https://github.com/csong27/membership-inference)
   
