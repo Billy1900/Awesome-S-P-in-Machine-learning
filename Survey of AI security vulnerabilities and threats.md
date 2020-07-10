@@ -80,7 +80,7 @@ Some restrictions should be taken into account before choosing the right attack 
   - [Robust Physical-World Attacks on Deep Learning Models](https://arxiv.org/abs/1707.08945)
  - Grey-box mode
  - Black-box mode
-### 2.2 Poisoning：Widespread.
+### 2.2 Poisoning：Widespread
 There are four broad attack strategies for altering the model based on the adversarial capabilities:
 - Label modification: Those attacks allows adversary to modify solely the labels in supervised learning datasets but for arbitrary data points. Typically subject to a constraint on total modification cost.
 - Data Injection: The adversary does not have any access to the training data as well as to the learning algorithm but has the ability to augment a new data to the training set. It’s possible to corrupt the target model by inserting adversarial samples into the training dataset.
@@ -110,16 +110,31 @@ Most studies currently cover inference attacks at the production stage, but ther
   It refers to the given black box access rights of the data record and model to determine whether the record is in the training data set of the model. This Attack is based on the observation that for a machine learning model, there is a significant difference in uncertainty between the training set and the non-training set, so an Attack model can be trained to guess if a sample exists in the training set.
 
 #### Research Work
-- Model Inversion attack
+##### Model Inversion attack
   - [Model inversion attacks that exploit confidence information and basic countermeasures](https://rist.tech.cornell.edu/papers/mi-ccs.pdf)
   - [Privacy in Pharmacogenetics: An End-to-End Case Study of Personalized Warfarin Dosing](https://pubmed.ncbi.nlm.nih.gov/27077138/)
-- Model extraction
+##### Model extraction
   - Stealing Machine Learning Models via Prediction APIs[[paper]](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer) [[code]](https://github.com/ftramer/Steal-ML)
-- Membership inference attack
-  - [Membership Inference Attacks Against Machine Learning Models](https://arxiv.org/pdf/1610.05820v2.pdf)
-  - [Demystifying Membership Inference Attacks in Machine Learning as a Service](https://arxiv.org/pdf/1807.09173.pdf)
-  - [ML-Leaks: Model and Data Independent Membership Inference Attacks and Defenses on Machine Learning Models](https://arxiv.org/abs/1806.01246)
-  - [Machine Learning with Membership Privacy using Adversarial Regularization](https://arxiv.org/abs/1807.05852)
+##### Membership inference attack
+- Membership Inference Attacks Against Machine Learning Models[[paper]](https://arxiv.org/pdf/1610.05820v2.pdf) [[Notes]](https://zhuanlan.zhihu.com/p/70982640) [[code]](https://github.com/csong27/membership-inference)
+  
+  This is the first membership inference attack on machine learning. They consider an attacker who can query the target model in a black-box way to obtain confidence scores for the queried input. Confidence score is used to determine whether the query input is present in the training data.
+
+  Their attack method involves first training shadow models on a labelled data set, which can be generated either via black-box queries to the target model or through assumptions about the underlying distribution of training set. The attacker then trains an attack model using the shadow models to distinguish whether or not an input record is in the shadow training set. Finally, the attacker makes API calls to the target model to obtain confidence scores for each given input record and infers whether or not the input was part of the target model’s training set.
+
+- privacy risk in machine learning: analyzing the connection to overfitting [[paper]](https://arxiv.org/abs/1709.01604) [[code]](https://github.com/samuel-yeom/ml-privacy-csf18)
+  
+  This is a more computationally efficient membership inference attack when the attacker has access to the target model and knows the average training loss of the model (White-box query access to the target model). To test the membership of an input record, the attacker evaluates the loss of the model on the input record and then classifies it as a member if the loss is smaller than the average training loss.
+  
+  Besides, this paper explores the relationships between privacy, overfitting, and influence in machine learning models.
+  
+- Towards measuring membership privacy [[paper]](https://arxiv.org/abs/1712.09136) 
+  
+  This paper proposes Differential Training Privacy (DTP) to quantify membership inference risk of publishing a classifier. This is a more targeted approach where the shadow models are trained with and without a targeted input record t. At inference time, the attacker can check if the input record t was present in the training set of target model.  This approach tests the membership of a specific record more accurately than [Shokri et al.’s approach.](https://arxiv.org/pdf/1610.05820v2.pdf)
+
+- ML-Leaks: Model and Data Independent Membership Inference Attacks and Defenses on Machine Learning Models [[paper]](https://arxiv.org/abs/1806.01246) [[code]](https://github.com/AhmedSalem2/ML-Leaks) [[Notes]](https://zhuanlan.zhihu.com/p/71142418)
+  
+  It proposes more generic membership inference attacks by relaxing the requirements of [Shokri et al.’s approach.](https://arxiv.org/pdf/1610.05820v2.pdf) In particular, requirements on the number of shadow models, knowledge of training data distribution and the target model architecture can be relaxed without substantially degrading the effectiveness of the attack.
 #### Reference
 - [AI与安全之Attack AI（5）偷人又偷心，破坏机器学习模型机密性的三种手法](https://zhuanlan.zhihu.com/p/145202385)
 
