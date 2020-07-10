@@ -7,7 +7,7 @@ Survey of attacks on not just only Machine Learning, but Deep Learning
 - [Adversarial Attacks and Defences Competition](https://arxiv.org/pdf/1804.00097.pdf)
 - [The Threat of Adversarial Attacks on Machine Learning in Network Security -- A Survey](https://arxiv.org/abs/1911.02621)
 - [A taxonomy and survey of attacks against machine learning](https://www.sciencedirect.com/science/article/abs/pii/S1574013718303289)
-
+- [Adversarial Examples: Attacks and Defenses for Deep Learning](https://arxiv.org/abs/1712.07107)
 ## 2. Course
 - [Adversarial Machine Learning Reading List](https://nicholas.carlini.com/writing/2018/adversarial-machine-learning-reading-list.html)
 - [Security and Privacy of Machine Learning](https://secml.github.io/class1/)
