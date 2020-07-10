@@ -1,25 +1,34 @@
 # Attacks on Machine Learning
 
-- [Attacks on Machine Learning](#attacks-on-machine-learning)
-  * [1. The first one of attacks categories](#1-the-first-one-of-attacks-categories)
-    + [1.1 Espionage](#11-espionage)
-    + [1.2 Sabotage](#12-sabotage)
-    + [1.3 Fraud](#13-fraud)
-  * [2.The second one of attacks categories](#2the-second-one-of-attacks-categories)
-    + [2.1 Evasion (Adversarial Examples)](#21-evasion--adversarial-examples-)
-    + [2.2 Poisoning：Widespread.](#22-poisoning-widespread)
-    + [2.3 Trojianing](#23-trojianing)      
-    + [2.4 Backdooring](#24-backdooring)
-    + [2.5 Reprogramming (adversarial reprogramming)](#25-reprogramming--adversarial-reprogramming-)
-    + [2.6 Inference attack (Privacy attack)](#26-inference-attack--privacy-attack-)
-  * [3.The third one of attacks categories](#3the-third-one-of-attacks-categories)
-    + [3.1 Attacks on supervised learning (classification)](#31-attacks-on-supervised-learning--classification-)
-    + [3.2 Attacks on supervised learning (regression)](#32-attacks-on-supervised-learning--regression-)
-    + [3.3 Attacks on semi-supervised learning (generative models)](#33-attacks-on-semi-supervised-learning--generative-models-)
-    + [3.4 Attacks on unsupervised learning (clustering)](#34-attacks-on-unsupervised-learning--clustering-)
-    + [3.5 Attacks on unsupervised learning (dimensionality reduction)](#35-attacks-on-unsupervised-learning--dimensionality-reduction-)
-    + [3.6 Attacks on reinforcement learning](#36-attacks-on-reinforcement-learning)
-
+- [1. The first one of attacks categories](#1-the-first-one-of-attacks-categories)
+  * [1.1 Espionage](#11-espionage)
+  * [1.2 Sabotage](#12-sabotage)
+  * [1.3 Fraud](#13-fraud)
+- [2.The second one of attacks categories](#2the-second-one-of-attacks-categories)
+  * [2.1 Evasion (Adversarial Examples)](#21-evasion--adversarial-examples-)
+    + [Research Work](#research-work)
+  * [2.2 Poisoning：Widespread.](#22-poisoning-widespread)
+  * [2.3 Trojianing](#23-trojianing)
+    + [Research Work](#research-work-1)
+  * [2.4 Backdooring](#24-backdooring)
+    + [Research Work](#research-work-2)
+  * [2.5 Reprogramming (adversarial reprogramming)](#25-reprogramming--adversarial-reprogramming-)
+  * [2.6 Inference attack (Privacy attack)](#26-inference-attack--privacy-attack-)
+    + [Research Work](#research-work-3)
+    + [Reference](#reference)
+- [3.The third one of attacks categories](#3the-third-one-of-attacks-categories)
+  * [3.1 Attacks on supervised learning (classification)](#31-attacks-on-supervised-learning--classification-)
+    + [Research Work](#research-work-4)
+  * [3.2 Attacks on supervised learning (regression)](#32-attacks-on-supervised-learning--regression-)
+    + [Research Work](#research-work-5)
+  * [3.3 Attacks on semi-supervised learning (generative models)](#33-attacks-on-semi-supervised-learning--generative-models-)
+    + [Research Work](#research-work-6)
+  * [3.4 Attacks on unsupervised learning (clustering)](#34-attacks-on-unsupervised-learning--clustering-)
+    + [Research Work](#research-work-7)
+  * [3.5 Attacks on unsupervised learning (dimensionality reduction)](#35-attacks-on-unsupervised-learning--dimensionality-reduction-)
+    + [Research Work](#research-work-8)
+  * [3.6 Attacks on reinforcement learning](#36-attacks-on-reinforcement-learning)
+    + [Research Work](#research-work-9)
 
 
 Though AI brings great power, like any technology, is not immune to attacks.There are different categories of attacks on ML models depending on the actual goals of an attacker (Espionage, Sabotage, Fraud) and the stages of machine learning pipeline (training and production), or also can be called attacks on algorithm and attacks on a model respectively. They are Evasion, Poisoning, Trojaning, Backdooring, Reprogramming, and Inference attacks. Evasion, poisoning and inference are the most widespread now.
@@ -90,7 +99,7 @@ The main goal is not only inject some additional behavior but to do it in such a
 This is the most realistic scenario of a sabotage attack on the AI model. As the name implies, the mechanism is based on remote reprogramming of the neural network algorithms.
 ### 2.6 Inference attack (Privacy attack)
 Most studies currently cover inference attacks at the production stage, but there are still some during training.
-- Model inversion attack (most common)
+- Model inversion attack (most common, also could be called attribute inference attack)
 
   This attack method USES some APIS provided by the machine learning system to obtain some preliminary information of the model, and reverse analyze the model with such preliminary information to obtain some private data inside the model. The difference between this kind of attack and the member inference attack is that the member inference attack is aimed at a single training data, while the model reverse attack tends to obtain a certain degree of statistical information.
 - Model extraction attack (less common)
