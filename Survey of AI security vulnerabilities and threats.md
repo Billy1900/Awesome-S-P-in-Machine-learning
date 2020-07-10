@@ -111,8 +111,14 @@ Most studies currently cover inference attacks at the production stage, but ther
 
 #### Research Work
 ##### Model Inversion attack
-  - [Model inversion attacks that exploit confidence information and basic countermeasures](https://rist.tech.cornell.edu/papers/mi-ccs.pdf)
-  - [Privacy in Pharmacogenetics: An End-to-End Case Study of Personalized Warfarin Dosing](https://pubmed.ncbi.nlm.nih.gov/27077138/)
+ - Model inversion attacks that exploit confidence information and basic countermeasures [[paper]](https://rist.tech.cornell.edu/papers/mi-ccs.pdf)
+ - Privacy in Pharmacogenetics: An End-to-End Case Study of Personalized Warfarin Dosing [[paper]](https://pubmed.ncbi.nlm.nih.gov/27077138/)
+ 
+  Fredrikson et al. formalize this attack in terms of maximizing the posterior probability estimate of the sensitive attribute. More concretely, for a test record x where the attacker knows the values of its non-sensitive attributes x_1; x_2;···x_(d-1) and all the prior probabilities of the attributes, the attacker obtains the output of the model, f(x), and attempts to recover the value of the sensitive attribute x_d. The attacker essentially searches for the value of xd that maximizes the posterior probability P(x_d|x_1; x_2;··· x_(d-1),f(x)). The success of this attack is based on the correlation between the sensitive attribute, x_d, and the model output, f(x).
+
+- Privacy risk in machine learning: Analyzing the connection to overfitting [[paper]](https://arxiv.org/abs/1709.01604) [[code]](https://github.com/samuel-yeom/ml-privacy-csf18)
+  
+  Yeom et al. also propose an attribute inference attack using the same principle they use for their membership inference attack. The attacker evaluates the model’s empirical loss on the input instance for different values of the sensitive attribute, and reports the value which has the maximum posterior probability of achieving the empirical loss. The authors define the attribute advantage similarly to their definition of membership advantage for membership inference.
 ##### Model extraction
   - Stealing Machine Learning Models via Prediction APIs[[paper]](https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer) [[code]](https://github.com/ftramer/Steal-ML)
 ##### Membership inference attack
