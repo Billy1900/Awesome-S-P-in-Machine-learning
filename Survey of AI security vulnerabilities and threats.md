@@ -102,12 +102,25 @@ Most studies currently cover inference attacks at the production stage, but ther
 - Model inversion attack (most common, also could be called attribute inference attack)
 
   This attack method USES some APIS provided by the machine learning system to obtain some preliminary information of the model, and reverse analyze the model with such preliminary information to obtain some private data inside the model. The difference between this kind of attack and the member inference attack is that the member inference attack is aimed at a single training data, while the model reverse attack tends to obtain a certain degree of statistical information.
+
+  **Connection with Differential Privacy:**
+
+  Differential privacy is mainly tailored to obfuscate the presence or absence of a record in a data set, by limiting the effect of any single record on the output of differential private model trained on the data set. Logically this definition also extends to attributes or features of a record. In other words, by adding sufficient differential privacy noise, we should be able to limit the effect of a sensitive attribute on the model’s output. This relationship between records and attributes is discussed by [Yeom et al.](https://arxiv.org/abs/1709.01604)
+
 - Model extraction attack (less common)
 
   Model extraction attack is an attack method in which an attacker can infer the parameters or functions of a machine learning model by circulating data and viewing the corresponding response results, so as to copy a machine learning model with similar or even identical functions.
+  
 - Membership inference attack (less frequent)
 
   It refers to the given black box access rights of the data record and model to determine whether the record is in the training data set of the model. This Attack is based on the observation that for a machine learning model, there is a significant difference in uncertainty between the training set and the non-training set, so an Attack model can be trained to guess if a sample exists in the training set.
+  
+  **Connection with Differential Privacy:**
+  
+  Differential privacy, by definition, aims to obfuscate the presence or absence of a record in the data set. On the other hand, membership inference attacks aim to identify the presence or absence of a record in the data set. Thus, intuitively these two notions counteract each other.
+
+  [Li et al.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.377.3337&rep=rep1&type=pdf) point to this fact and provide a direct relationship between differential privacy and membership inference attacks. [Backes et al.](https://www.mhumbert.com/publications/ccs16.pdf) studied membership inference attacks on microRNA studies and showed that differential privacy can reduce the success of membership inference attacks, but at the cost of utility.
+
 
 #### Research Work
 ##### Model Inversion attack
