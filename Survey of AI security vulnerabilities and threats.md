@@ -157,6 +157,10 @@ Most studies currently cover inference attacks at the production stage, but ther
 - ML-Leaks: Model and Data Independent Membership Inference Attacks and Defenses on Machine Learning Models [[paper]](https://arxiv.org/abs/1806.01246) [[code]](https://github.com/AhmedSalem2/ML-Leaks) [[Notes]](https://zhuanlan.zhihu.com/p/71142418)
   
   It proposes more generic membership inference attacks by relaxing the requirements of [Shokri et al.’s approach.](https://arxiv.org/pdf/1610.05820v2.pdf) In particular, requirements on the number of shadow models, knowledge of training data distribution and the target model architecture can be relaxed without substantially degrading the effectiveness of the attack.
+  
+ - Assessing differentially private deep learning with Membership Inference [[paper]](https://arxiv.org/abs/1912.11328)
+ 
+ - Differential Privacy Defenses and Sampling Attacks for Membership Inference [[paper]](https://priml-workshop.github.io/priml2019/papers/PriML2019_paper_47.pdf)
 #### Reference
 - [AI与安全之Attack AI（5）偷人又偷心，破坏机器学习模型机密性的三种手法](https://zhuanlan.zhihu.com/p/145202385)
 
