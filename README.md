@@ -13,6 +13,7 @@ Survey of attacks on not just only Machine Learning, but Deep Learning
 - [Security and Privacy of Machine Learning](https://secml.github.io/class1/)
 - [Adversarial Machine Learning (CS 7301.005) ](https://personal.utdallas.edu/~muratk/courses/adv-ml-19f.html)
 - [A summary of a keynote lecture at the Deep Learning Security workshop at IEEE Security and Privacy 2018](https://arxiv.org/pdf/1806.04169.pdf)
+- [Privacy machine learning workshop (CCS 2019)](https://ppml-workshop.github.io/)
 
 ## 3. Tool
 - [IBM: Adversarial Robustness Toolbox (ART) v1.3](https://github.com/IBM/adversarial-robustness-toolbox)
