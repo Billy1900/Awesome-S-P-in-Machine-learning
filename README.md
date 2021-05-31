@@ -20,6 +20,7 @@ Survey of attacks on not just only Machine Learning, but Deep Learning
 # 2. Privacy issues in machine learning
 ## 2.1 Survey paper and Blogs
 - [A Survey of Privacy Attacks in Machine Learning](https://arxiv.org/pdf/2007.07646.pdf)
+- [Dataset Security for Machine Learning: Data Poisoning, Backdoor Attacks, and Defenses](https://arxiv.org/abs/2012.10544)
 - Differential privacy
   - [Machine Learning with Differential Privacy in TensorFlow](http://www.cleverhans.io/privacy/2019/03/26/machine-learning-with-differential-privacy-in-tensorflow.html)
   - [Differential Privacy with TensorFlow](https://blogs.rstudio.com/ai/posts/2019-12-20-differential-privacy/)
