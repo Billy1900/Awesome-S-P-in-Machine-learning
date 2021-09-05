@@ -2,15 +2,15 @@
 A worldview of security and privacy issues in machine learning.
 
 # 0. Survey Paper or Introduciton or Blogs 
-The most detailed review of this area is [AI sec Matrix from Tecent](https://matrix.tencent.com/en/) and its [pdf version](1.pdf). For most of paper, such as [SoK: Security and Privacy in Machine Learning (IEEE Europe S&P 2018)](https://ieeexplore.ieee.org/document/8406613), [Security and Privacy Issues in Deep Learning](https://arxiv.org/abs/1807.11655), they classify attacks as evasion attack (inference phase) and poisoning attack (training phase). In previous studies of evasion attack, attacks have typically been categorized as white-box or black-box attacks. Poisoning attacks can also be divided into white- and black-box attacks based on the model accessibility. Specifically, we categorize poisoning attacks into three subclasses based on the vulnerability of the target model: performance degradation, targeted poisoning, and backdoor attacks.
+The most detailed review of this area is [AI sec Matrix from Tecent](https://matrix.tencent.com/en/) and its [pdf version](1.pdf). For most of paper, such as [SoK: Security and Privacy in Machine Learning (IEEE Europe S&P 2018)](https://ieeexplore.ieee.org/document/8406613), [Security and Privacy Issues in Deep Learning](https://arxiv.org/abs/1807.11655), they classify attacks as **evasion attack (inference phase) and poisoning attack (training phase)**. In previous studies of evasion attack, attacks have typically been categorized as white-box or black-box attacks. Poisoning attacks can also be divided into white- and black-box attacks based on the model accessibility. Specifically, we categorize poisoning attacks into three subclasses based on the vulnerability of the target model: **performance degradation, targeted poisoning, and backdoor attacks.**
 
 <img src="2.jpg" width=400></img>
 
-The particular thing is that Adversarial attack include two attacks: Evasion attack and poisoning attack. Adversarial machine learning, a technique that attempts to fool models with deceptive data.
+The particular thing is that Adversarial attack include two attacks: Evasion attack and poisoning attack. **Adversarial machine learning**, a technique that attempts to fool models with deceptive data.
 
 <img src="1.png"></img>
 
-Current DL systems additionally face the threat of privacy breach. There are considerable risks involved in training a DL model with data owned by multiple parties; for instance, in the case of deploying an application via a third-party cloud system. The potential privacy threats to DL-based systems arising from service providers, information silos and users. The most recent defense methods based on cryptography, such as homomorphic encryption, secure multiparty computation, and differential privacy.
+Current DL systems additionally face the threat of privacy breach. There are considerable risks involved in training a DL model with data owned by multiple parties; for instance, in the case of deploying an application via a third-party cloud system. The potential privacy threats to DL-based systems arising from service providers, information silos and users. The most recent defense methods based on cryptography, such as **homomorphic encryption, secure multiparty computation, and differential privacy.**
 
 # 1. Security issues in machine learning
 Machine learning security is software security for machine learning systems. Like other types of software, machine learning software is at risk for security breaches and cyber attacks. Machine learning security is important because ML systems often contain confidential information or provide a competitive advantage to the organization that they would not want competitors to be able to access.
